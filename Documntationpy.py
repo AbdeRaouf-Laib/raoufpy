@@ -207,7 +207,6 @@ print(txt)
 #   endswith()	            Returns true if the string ends with the specified value                                    x = "hello !"                       x.endswith()           True 
 #   expandtabs()	        Sets the tab size of the string                                                             x =  "hell\to"                      x.expandtabs(5)        hell     o
 #   find()	                Searches the string for a specified value and returns the position of where it was found    x = "Hello, welcome to my"          x.find(to)             2
-#   format()	            Formats specified values in a string                                                        x = "For only {price:.2f}"          x.format(49)           For only 49.00             
 #   format_map()	        Formats specified values in a string
 #   index()	                Searches the string for a specified value and returns the position of where it was found
 #   isalnum()	            Returns True if all characters in the string are alphanumeric
@@ -245,9 +244,19 @@ print(txt)
 #   upper()	                Converts a string into upper case
 #   zfill()	                Fills the string with a specified number of 0 values at the beginning
 
+#for check an objet is of a certain data type:
+x = 200
+print(isinstance(x, int))
 
-
-
+#The logical operator
+#Operator	       Name       	    Example	
+#   +	        Addition	        x + y	
+#   -	        Subtraction	        x - y	
+#   *	        Multiplication	    x * y	
+#   /	        Division	        x / y	
+#   %	        Modulus	            x % y	
+#   **	        Exponentiation	    x ** y	
+#   //	        Floor division	    x // y
 
 
 
@@ -279,3 +288,4 @@ b = int(y)
 #convert from int to complex:
 c = complex(x)
 
+#this same values are return False: False , None , 0 , "" ,() , [] ,{}
