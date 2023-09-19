@@ -126,12 +126,130 @@ if "expensive" not in txt:
 
 #Specify the start index and the end index:
 b = "Hello, World!"
-#var name[start index : stop index]
+#var name[start index : stop index]:
 print(b[2:5])
-#from start 
+#from start:
 print(b[:5])
-#to stop
+#to the end:
 print(b[2:]) 
+#we can use negative indexes to start the slice from the end of the string:
+b = "Hello, World!"
+print(b[-5:-2])
+
+#for convert the sting in upper case:
+a = "Hello, World!"
+print(a.upper())
+#for convert the sting in lower case:
+a = "Hello, World!"
+print(a.lower())
+
+#for remove the Whitespace:
+a = "    hello, world!"
+print(a.strip())
+
+#for replace a string with another one:
+a = "Hello, World!"
+print(a.replace("H", "J"))
+
+#The split() method returns a list where the text between the specified separator becomes the list items.
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
+
+#To concatenate, or combine, two strings you can use the + operator:
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+#To add a space between them, add a " ":
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
+
+#we can combine strings and numbers by using the format() method!
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+#The format() method takes unlimited number of arguments, and are placed into the respective placeholders:
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want {} pieces of item {} for {} dollars."
+print(myorder.format(quantity, itemno, price))
+#You can use index numbers {0} to be sure the arguments are placed in the correct placeholders:
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(quantity, itemno, price))
+
+#To insert characters that are illegal in a string, use an escape character \"...\":
+txt = "We are the so-called \"Vikings\" from the north."
+print(txt)
+#              Code	             Result	             example                                             rtu
+#              \'	             Single Quote	     txt = 'It\'s alright.'                           It's alright.
+#              \\	             Backslash	         txt = "This will insert one \\ (backslash)."     This will insert one \ (backslash).
+#              \n	             New Line	         
+#              \r	             Carriage Return	
+#              \t	             Tab	            txt = "Hello\tWorld!"                             Hello   World!
+#              \b	             Backspace	
+#              \f	             Form Feed	
+#              \ooo	             Octal value	   txt = "\110\145\154\154\157"                       Hello
+#              \xhh	             Hex value         txt = "\x48\x65\x6c\x6c\x6f"                       Hello
+
+#The all method of string  
+#    function                  Description                                                                                example                              code                  return
+#   capitalize()          	Converts the first character to upper case                                                  x = "hello,world!"                  x.capitalize()         Hello,world!
+#   casefold()	            Converts string into lower case                                                             x = "HELLO"                         x.casefold()           hello            
+#   center()	            Returns a centered string                                                                   x = "HELLO"                         x.center(2)            ..HELLO # . == space 
+#   count()	                Returns the number of times a specified value occurs in a string                            x = "I love apples, apple are..."   x.count("apple")       2
+#   encode()	            Returns an encoded version of the string                                                    x = "My name is Ståle"              x.encode()             b'My name is St\xc3\xe5le'
+#   endswith()	            Returns true if the string ends with the specified value                                    x = "hello !"                       x.endswith()           True 
+#   expandtabs()	        Sets the tab size of the string                                                             x =  "hell\to"                      x.expandtabs(5)        hell     o
+#   find()	                Searches the string for a specified value and returns the position of where it was found    x = "Hello, welcome to my"          x.find(to)             2
+#   format()	            Formats specified values in a string                                                        x = "For only {price:.2f}"          x.format(49)           For only 49.00             
+#   format_map()	        Formats specified values in a string
+#   index()	                Searches the string for a specified value and returns the position of where it was found
+#   isalnum()	            Returns True if all characters in the string are alphanumeric
+#   isalpha()	            Returns True if all characters in the string are in the alphabet
+#   isascii()	            Returns True if all characters in the string are ascii characters
+#   isdecimal()             Returns True if all characters in the string are decimals
+#   isdigit()	            Returns True if all characters in the string are digits
+#   isidentifier()	        Returns True if the string is an identifier
+#   islower()	            Returns True if all characters in the string are lower case
+#   isnumeric()	            Returns True if all characters in the string are numeric
+#   isprintable()	        Returns True if all characters in the string are printable
+#   isspace()               Returns True if all characters in the string are whitespaces
+#   istitle()               Returns True if the string follows the rules of a title
+#   isupper()	            Returns True if all characters in the string are upper case
+#   join()	                Joins the elements of an iterable to the end of the string
+#   ljust()	                Returns a left justified version of the string
+#   lower()	                Converts a string into lower case
+#   lstrip()	            Returns a left trim version of the string
+#   maketrans()             Returns a translation table to be used in translations
+#   partition()             Returns a tuple where the string is parted into three parts
+#   replace()	            Returns a string where a specified value is replaced with a specified value
+#   rfind()	                Searches the string for a specified value and returns the last position of where it was found
+#   rindex()	            Searches the string for a specified value and returns the last position of where it was found
+#   rjust()	                Returns a right justified version of the string
+#   rpartition()	        Returns a tuple where the string is parted into three parts
+#   rsplit()	            Splits the string at the specified separator, and returns a list
+#   rstrip()	            Returns a right trim version of the string
+#   split()	                Splits the string at the specified separator, and returns a list
+#   splitlines()	        Splits the string at line breaks and returns a list
+#   startswith()	        Returns true if the string starts with the specified value
+#   strip()	                Returns a trimmed version of the string
+#   swapcase()	            Swaps cases, lower case becomes upper case and vice versa
+#   title()	                Converts the first character of each word to upper case
+#   translate()             Returns a translated string
+#   upper()	                Converts a string into upper case
+#   zfill()	                Fills the string with a specified number of 0 values at the beginning
+
+
+
+
+
+
 
 
 
