@@ -79,10 +79,12 @@ x = b"Hello"	                              #bytes
 x = bytearray(5)	                          #bytearray	
 x = memoryview(bytes(5))	                  #memoryview	
 x = None
+
 #random function
 import random
-#random.radrange(first num,secound num)
+#random.radrange(start num,stop num)
 print("ran",random.randrange(1, 100))
+
 #You can assign a multiline string to a variable by using three quotes:
 a = """Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
@@ -94,17 +96,42 @@ consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua.'''
 print(a)
+
 #for get only one varible in python
 print("var",a[5])
+
 # we can loop through the characters in a string:
 for x in "banana":
   print(x)
+
 #To get the length of a string, use the len() function:
 a = "Hello, World!"
 print(len(a))
+
 #To check if a certain phrase or character is present in a string, we can use the keyword in:
 txt = "The best things in life are free!"
 print("free" in txt)#The result is True or False
+#And we can use this in if statement
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.")
+
+#To check if a certain phrase or character is NOT present in a string:
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+#And we can use this in if statement
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+
+#Specify the start index and the end index:
+b = "Hello, World!"
+#var name[start index : stop index]
+print(b[2:5])
+#from start 
+print(b[:5])
+#to stop
+print(b[2:]) 
 
 
 
