@@ -198,51 +198,51 @@ print(txt)
 #              \xhh	             Hex value         txt = "\x48\x65\x6c\x6c\x6f"                       Hello
 
 #The all method of string  
-#    function                  Description                                                                                example                              code                  return
-#   capitalize()          	Converts the first character to upper case                                                  x = "hello,world!"                  x.capitalize()         Hello,world!
-#   casefold()	            Converts string into lower case                                                             x = "HELLO"                         x.casefold()           hello            
-#   center()	            Returns a centered string                                                                   x = "HELLO"                         x.center(2)            ..HELLO # . == space 
-#   count()	                Returns the number of times a specified value occurs in a string                            x = "I love apples, apple are..."   x.count("apple")       2
-#   encode()	            Returns an encoded version of the string                                                    x = "My name is Ståle"              x.encode()             b'My name is St\xc3\xe5le'
-#   endswith()	            Returns true if the string ends with the specified value                                    x = "hello !"                       x.endswith()           True 
-#   expandtabs()	        Sets the tab size of the string                                                             x =  "hell\to"                      x.expandtabs(5)        hell     o
-#   find()	                Searches the string for a specified value and returns the position of where it was found    x = "Hello, welcome to my"          x.find(to)             2
-#   format_map()	        Formats specified values in a string
-#   index()	                Searches the string for a specified value and returns the position of where it was found
-#   isalnum()	            Returns True if all characters in the string are alphanumeric
-#   isalpha()	            Returns True if all characters in the string are in the alphabet
-#   isascii()	            Returns True if all characters in the string are ascii characters
-#   isdecimal()             Returns True if all characters in the string are decimals
-#   isdigit()	            Returns True if all characters in the string are digits
-#   isidentifier()	        Returns True if the string is an identifier
-#   islower()	            Returns True if all characters in the string are lower case
-#   isnumeric()	            Returns True if all characters in the string are numeric
-#   isprintable()	        Returns True if all characters in the string are printable
-#   isspace()               Returns True if all characters in the string are whitespaces
-#   istitle()               Returns True if the string follows the rules of a title
-#   isupper()	            Returns True if all characters in the string are upper case
-#   join()	                Joins the elements of an iterable to the end of the string
-#   ljust()	                Returns a left justified version of the string
-#   lower()	                Converts a string into lower case
-#   lstrip()	            Returns a left trim version of the string
-#   maketrans()             Returns a translation table to be used in translations
-#   partition()             Returns a tuple where the string is parted into three parts
-#   replace()	            Returns a string where a specified value is replaced with a specified value
-#   rfind()	                Searches the string for a specified value and returns the last position of where it was found
-#   rindex()	            Searches the string for a specified value and returns the last position of where it was found
-#   rjust()	                Returns a right justified version of the string
-#   rpartition()	        Returns a tuple where the string is parted into three parts
-#   rsplit()	            Splits the string at the specified separator, and returns a list
-#   rstrip()	            Returns a right trim version of the string
-#   split()	                Splits the string at the specified separator, and returns a list
-#   splitlines()	        Splits the string at line breaks and returns a list
-#   startswith()	        Returns true if the string starts with the specified value
-#   strip()	                Returns a trimmed version of the string
-#   swapcase()	            Swaps cases, lower case becomes upper case and vice versa
-#   title()	                Converts the first character of each word to upper case
-#   translate()             Returns a translated string
-#   upper()	                Converts a string into upper case
-#   zfill()	                Fills the string with a specified number of 0 values at the beginning
+#    function                  Description                                                                                   example                              code                  return
+#   capitalize()          	Converts the first character to upper case                                                       x = "hello,world!"                  x.capitalize()         Hello,world!
+#   casefold()	            Converts string into lower case                                                                  x = "HELLO"                         x.casefold()           hello            
+#   center()	            Returns a centered string                                                                        x = "HELLO"                         x.center(2)            ..HELLO # . == space 
+#   count()	                Returns the number of times a specified value occurs in a string                                 x = "I love apples, apple are..."   x.count("apple")       2
+#   encode()	            Returns an encoded version of the string                                                         x = "My name is Ståle"              x.encode()             b'My name is St\xc3\xe5le'
+#   endswith()	            Returns true if the string ends with the specified value                                         x = "hello !"                       x.endswith()           True 
+#   expandtabs()	        Sets the tab size of the string                                                                  x =  "hell\to"                      x.expandtabs(5)        hell     o
+#   find()	                Searches the string for a specified value and returns the position of where it was found         x = "Hello, welcome to my"          x.find(to)             2
+#   format_map()	        Formats specified values in a string     
+#   index()	                Searches the string for a specified value and returns the position of where it was found         x = "Hello, welcome to my"          x.index("welcome")     7
+#   isalnum()	            Returns True if all characters in the string are alphanumeric                                    x = "Company12"                     x.isalnum()            True 
+#   isalpha()	            Returns True if all characters in the string are in the alphabet                                 x = "CompanyX"                      x.isalpha()            True
+#   isascii()	            Returns True if all characters in the string are ascii characters                                x = "Company123"                    x.isascii()            True
+#   isdecimal()             Returns True if all characters in the string are decimals                                        x = "1234"                          x.isdecimal()          True
+#   isdigit()	            Returns True if all characters in the string are digits                                          x = "50800"                         x.isdigit()	        True                                  
+#   isidentifier()	        Returns True if the string is an identifier                                                      x = "str"                           x.isidentifier()       True
+#   islower()	            Returns True if all characters in the string are lower case                                      x = "str"                           x.islower()            True
+#   isnumeric()	            Returns True if all characters in the string are numeric                                         x = "1234"                          x.isnumric()           True
+#   isprintable()	        Returns True if all characters in the string are printable                                       x = "Hello! Are you #1?"            x.isprintable()	    True
+#   isspace()               Returns True if all characters in the string are whitespaces                                     x = "  "                            x.isspace()            True
+#   istitle()               Returns True if the string follows the rules of a title                                          x = "Hello, And Welcome To My"      x.istitle()            True
+#   isupper()	            Returns True if all characters in the string are upper case                                      x = "HELLO"                         x.isupper()            True
+#   join()	                Joins the elements of an iterable to the end of the string                                       x = ("John", "Peter", "Vicky")      s = "/".join(x)        John/Peter/Vicky 
+#   ljust()	                Returns a left justified version of the string                                                   x = 
+#   lower()	                Converts a string into lower case                                                                x = "HELLO"                         x.lower()              "hello"      
+#   lstrip()	            Returns a left trim version of the string                                                        x = 
+#   maketrans()             Returns a translation table to be used in translations                                           x = 
+#   partition()             Returns a tuple where the string is parted into three parts                                      x = 
+#   replace()	            Returns a string where a specified value is replaced with a specified value                      x = 
+#   rfind()	                Searches the string for a specified value and returns the last position of where it was found    x = 
+#   rindex()	            Searches the string for a specified value and returns the last position of where it was found    x = 
+#   rjust()	                Returns a right justified version of the string                                                  x = 
+#   rpartition()	        Returns a tuple where the string is parted into three parts                                      x = 
+#   rsplit()	            Splits the string at the specified separator, and returns a list                                 x =   
+#   rstrip()	            Returns a right trim version of the string                                                       x = 
+#   split()	                Splits the string at the specified separator, and returns a list                                 x =
+#   splitlines()	        Splits the string at line breaks and returns a list                                              x = 
+#   startswith()	        Returns true if the string starts with the specified value                                       x =
+#   strip()	                Returns a trimmed version of the string                                                          x =
+#   swapcase()	            Swaps cases, lower case becomes upper case and vice versa                                        x = 
+#   title()	                Converts the first character of each word to upper case                                          x = 
+#   translate()             Returns a translated string                                                                      x =
+#   upper()	                Converts a string into upper case                                                                x = "hello"                        x.upper()              "HELLO"
+#   zfill()	                Fills the string with a specified number of 0 values at the beginning                            x =
 
 #for check an objet is of a certain data type:
 x = 200
@@ -299,7 +299,7 @@ print(isinstance(x, int))
 #in 	    Returns True if a sequence with the specified value is present in the object	   x in y	
 #not in	    Returns True if a sequence with the specified value is not present in the object   x not in y
 
-#
+# The 
 #Operator	    Name      Description	                                                                                                           Example	
 #  &         	AND	      Sets each bit to 1 if both bits are 1                                                                                   	x & y	
 #  |	        OR	      Sets each bit to 1 if one of two bits is 1	                                                                            x | y	
@@ -307,6 +307,73 @@ print(isinstance(x, int))
 #  ~	        NOT	      Inverts all the bits	                                                                                                    ~x	
 #  <<        	Zero      fill left shift	Shift left by pushing zeros in from the right and let the leftmost bits fall off                    	x << 2	
 #  >>        	Signed    right shift	Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off     x >> 2
+
+#The Array in python:
+# type  |  brackets  |  ordered  |  mutable  |  duplicate  |     use      |
+#-------|------------|----------------------------------------------------|
+# list  |     []     |    yes    |    yes    |     yes     |      عام     |
+# tuple |     ()     |    yes    |    no     |     yes     |    احداثيات    |
+# set   |     {}     |    no     |    no     |     no      | العمليات الرياضة |
+# dict  |     {}     |    key    |    yes    |   yes/no    |  قواعد البيانات  |
+
+# --------------------list--------------------------#
+# brackets
+num = [1,4.5,"hello",[1.5,2],True]
+print(num)
+# ordered
+print(num[2])
+# mutable
+num[1] = 'ali'
+print(num)
+# duplicate
+num = [1,1,1,1]
+print(num)
+#---------------------tuple--------------------------#
+# brackets
+my_tuple = (1,4.5,"hello",[1.5,2],True)
+print(my_tuple)
+# ordered
+print(my_tuple[2])
+#duplicate
+my_tuple = (1,1,1,1)
+print(my_tuple)
+#----------------------set---------------------------#
+#brackets
+my_set = ("ahmed","ali","laib","raouf")
+print(my_set)
+#---------------------dict---------------------------#
+# brackets
+car = {
+    "color":"red",
+    "model":2022,
+    "price":200000
+}
+# ordered
+print(car["color"])
+# mutable
+car["color"] = "black"
+print(car["color"])
+# duplicate
+car = {
+    "color":"red",
+    "model":2022,
+    "color":"black",#no
+    "colore":"red"#yes
+}
+print(car)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
