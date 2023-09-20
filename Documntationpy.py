@@ -328,6 +328,8 @@ print(num)
 # duplicate
 num = [1,1,1,1]
 print(num)
+#chengeable: we can add and remove items in a list after it has been created
+
 #---------------------tuple--------------------------#
 # brackets
 my_tuple = (1,4.5,"hello",[1.5,2],True)
@@ -361,6 +363,64 @@ car = {
     "colore":"red"#yes
 }
 print(car)
+
+#for give The number elements of list we use len:
+li = ["abderaouf","laib",15,2.03,-1,True]
+print(len(li)) 
+#The type of list is list:
+print(type(li))
+#for constracte a list It have 2 methode:
+#1st methode: Simple methode;
+#2nd methode: we use list() function
+lis = list(("raouf",True,15,2.01,'Hayt '))
+
+#Negative Indexing
+#Negative indexing means start from the end: -1 refers to the last item, -2 refers to the second last item etc.
+
+#Range of Indexes
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+
+#Check if Item Exists
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+    print("Yes, 'apple' is in the fruits list")
+
+#For chenge a list we have existe 2methods
+#1st Method change the value of a specific item, refer to the index number:
+thislist = ["apple", "banana", "cherry"]
+thislist[1] = "blackcurrant"
+print(thislist)
+#range
+#two values with two values
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist[1:3] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+#two values with one value
+thislist = ["apple", "banana", "cherry"]
+thislist[1:2] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+#one value with two values
+thislist = ["apple", "banana", "cherry"]
+thislist[1:3] = ["watermelon"]
+print(thislist)
+#2nd method
+#To insert a new list item, without replacing any of the existing values, we can use the insert() method.
+#The insert() method inserts an item at the specified index:
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "watermelon")
+print(thislist)
+
+#To add an item to the end of the list, use the append() method:
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+
+
+
 
 
 
@@ -421,3 +481,5 @@ c = complex(x)
 # not                                               Logical NOT	
 # and                                               AND	
 # or	                                            OR
+#-Note: There are some list methods that will change the order, but in general: the order of the items will not change.
+#-Note: The length of the list will change when the number of items inserted does not match the number of items replaced.
