@@ -459,6 +459,23 @@ for i in range(len(thislist)):
   print(thislist[i])
 
 #You can loop through the list items by using a while loop.
+while i < len(thislist):
+    print(thislist[i])
+    i = i + 1
+
+#Looping Using List Comprehension
+#List Comprehension offers the shortest syntax for looping through lists:
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
+#to write a short syntex for creating the new list from an old list:
+#The syntax:
+#newlist = [expression for item in iterable if condition == True]
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+print(newlist)
+
+
+
 
 
 
