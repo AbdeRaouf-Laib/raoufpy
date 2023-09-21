@@ -418,10 +418,47 @@ thislist = ["apple", "banana", "cherry"]
 thislist.append("orange")
 print(thislist)
 
+#To append elements from another list to the current list, use the extend() method:
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
 
+#The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+thislist.extend(thistuple)
+print(thislist)
 
+#The remove() or del() method removes the specified item:
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+del thislist[2]
+print(thislist)
+#we can delete the list 
+del thislist
 
+#for remove the last item:
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
 
+#removeing only the content of list:
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
+
+#You can loop through the list items by using a for loop:
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+
+#You can also loop through the list items by referring to their index number:
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
+
+#You can loop through the list items by using a while loop.
 
 
 
