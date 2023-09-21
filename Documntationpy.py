@@ -473,7 +473,35 @@ thislist = ["apple", "banana", "cherry"]
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 newlist = [x for x in fruits if "a" in x]
 print(newlist)
+#for sorting the list:
+#alphabetically:
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+#numerically
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+#descending:
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+#descending:
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(reverse = True)
+print(thislist)
 
+#Case Insensitive Sort
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+
+#Reverse Order
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)
+
+€Copy a Lis
 
 
 
@@ -537,3 +565,4 @@ c = complex(x)
 # or	                                            OR
 #-Note: There are some list methods that will change the order, but in general: the order of the items will not change.
 #-Note: The length of the list will change when the number of items inserted does not match the number of items replaced.
+#By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters.
