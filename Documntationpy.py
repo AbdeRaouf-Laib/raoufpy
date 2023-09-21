@@ -309,10 +309,10 @@ print(isinstance(x, int))
 #  >>        	Signed    right shift	Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off     x >> 2
 
 #The Array in python:
-# type  |  brackets  |  ordered  |  mutable  |  duplicate  |     use      |
-#-------|------------|----------------------------------------------------|
-# list  |     []     |    yes    |    yes    |     yes     |      عام     |
-# tuple |     ()     |    yes    |    no     |     yes     |    احداثيات    |
+# type  |  brackets  |  ordered  |  mutable  |  duplicate  |        use       |
+#-------|------------|--------------------------------------------------------|
+# list  |     []     |    yes    |    yes    |     yes     |        عام       |
+# tuple |     ()     |    yes    |    no     |     yes     |     احداثيات     |
 # set   |     {}     |    no     |    no     |     no      | العمليات الرياضة |
 # dict  |     {}     |    key    |    yes    |   yes/no    |  قواعد البيانات  |
 
@@ -501,16 +501,52 @@ thislist = ["banana", "Orange", "Kiwi", "cherry"]
 thislist.reverse()
 print(thislist)
 
-€Copy a Lis
+#Copy a List
+#1st method
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+#2nd method
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
 
+#Join two list:
+#1st method
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
+#2nd method
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+for x in list2:
+  list1.append(x)
+print(list1)
+#we can use the extend() method, where the purpose is to add elements from one list to another list:
+#Use the extend() method to add list2 at the end of list1:
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+list1.extend(list2)
+print(list1)
 
+#list method:
+# Method	        Description
+# append()       Adds an element at the end of the list
+# clear()        Removes all the elements from the list
+# copy()	       Returns a copy of the list
+# count()        Returns the number of elements with the specified value
+# extend()       Add the elements of a list (or any iterable), to the end of the current list
+# index()        Returns the index of the first element with the specified value
+# insert()       Adds an element at the specified position
+# pop()	         Removes the element at the specified position
+# remove()       Removes the item with the specified value
+# reverse()      Reverses the order of the list
+# sort()	       Sorts the list
 
-
-
-
-
-
-
+#Create a Tuple:
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
 
 
 
