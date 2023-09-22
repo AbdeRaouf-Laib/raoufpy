@@ -433,7 +433,7 @@ print(thislist)
 #The remove() or del() method removes the specified item:
 thislist = ["apple", "banana", "cherry"]
 thislist.remove("banana")
-del thislist[2]
+del thislist[1]
 print(thislist)
 #we can delete the list 
 del thislist
@@ -545,8 +545,51 @@ print(list1)
 # sort()	       Sorts the list
 
 #Create a Tuple:
+#1st method
 thistuple = ("apple", "banana", "cherry")
 print(thistuple)
+#2nd method
+thisTuple1 = tuple(("apple", "banana", "cherry"))
+print(thisTuple1)
+
+#in The Tuple for create only one item we should adding the , in the end of tuple
+thistuple = ("apple",)
+print(type(thistuple))
+#To access the tuple we use the same list
+
+#Convert the tuple into a list to be able to change it:
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x)
+
+#Convert the tuple into a list, add "orange", and convert it back into a tuple:
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.append("orange")
+thistuple2 = tuple(y)
+print(thistuple2)
+#Create a new tuple with the value "orange", and add that tuple:
+thistuple3 = ("apple", "banana", "cherry")
+y = ("orange",)
+thistuple3 += y
+print(thistuple3)
+
+#To remove an item in the Tuple:
+#Convert the tuple into a list, remove "apple", and convert it back into a tuple:
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+
+#The del keyword can delete the tuple completely:
+thistuple = ("apple", "banana", "cherry")
+del thistuple
+print(thistuple) #this will raise an error because the tuple no longer exists
+
+
+
 
 
 
@@ -602,3 +645,4 @@ c = complex(x)
 #-Note: There are some list methods that will change the order, but in general: the order of the items will not change.
 #-Note: The length of the list will change when the number of items inserted does not match the number of items replaced.
 #By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters.
+#Note: You cannot remove items in a tuple.
