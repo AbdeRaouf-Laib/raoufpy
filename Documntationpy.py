@@ -598,8 +598,6 @@ print(thistuple) #this will raise an error because the tuple no longer exists
 
 
 
-
-
 #COMMENTS:
 #-The number of spaces is up to use as a programmer but it has to be at least one; 
 #And we have to use the same of spaces number in the block of code! 
