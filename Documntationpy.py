@@ -918,11 +918,52 @@ thisdict = {
 thisdict.popitem()
 print(thisdict)
 
+#The del keyword removes the item with the specified key name:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict["model"]
+print(thisdict)
+#The del keyword can also delete the dictionary completely:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict
 
+#The clear() method empties the dictionary:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.clear()
+print(thisdict)
 
+#Print all key names in the dictionary, one by one:
+# 1st method:
+for x in thisdict:
+  print(x)
+# 2nd method:
+#You can use the keys() method to return the keys of a dictionary:
+for x in thisdict.keys():
+  print(x)
 
+#Print all values in the dictionary, one by one:
+#1st method:
+for x in thisdict:
+  print(thisdict[x])
+#2nd method:
+# You can also use the values() method to return values of a dictionary:
+for x in thisdict.values():
+  print(x)
 
-
+#Loop through both keys and values, by using the items() method:
+for x, y in thisdict.items():
+  print(x, y)
 
 
 
