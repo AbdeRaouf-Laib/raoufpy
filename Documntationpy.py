@@ -742,6 +742,87 @@ print(x)
 #union()	                      Return a set containing the union of sets
 #update()	                      Update the set with the union of this set and others
 
+#Dictionaries are used to store data values in key:value pairs.
+#A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+
+#Create and print a dictionary:
+#1st method:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+#2nd metod:
+thisdict = dict(name = "John", age = 36, country = "Norway")
+print(thisdict)
+
+#Dictionary Items
+#Dictionary items are ordered, changeable, and does not allow duplicates.
+#Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
+#Print the "brand" value of the dictionary:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict["brand"])
+
+#Changeable
+# Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
+#Duplicates Not Allowed
+#Duplicate values will overwrite existing values:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict)
+
+#Print the number of items in the dictionary:
+print(len(thisdict))
+
+#The values in dictionary items can be of any data type:
+thisdict = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+}
+
+#Print the data type of a dictionary:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(type(thisdict))
+
+#You can access the items of a dictionary by referring to its key name, inside square brackets:
+#Get the value of the "model" key:
+#1st method:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict["model"]
+#2nd method:
+x = thisdict.get("model")
+
+#The keys() method will return a list of all the keys in the dictionary.
+x = thisdict.keys()
+print(x)
+
+#The list of the keys is a view of the dictionary, meaning that any changes done to the dictionary will be reflected in the keys list.
+
+
+
+
+
+
+
 
 
 
