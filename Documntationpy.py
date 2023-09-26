@@ -1035,6 +1035,26 @@ print(myfamily["child2"]["name"])
 #update()       Updates the dictionary with the specified key-value pairs
 #values()       Returns a list of all the values in the dictionary
 
+#if else is same as c But we there is an additions:
+#elif is same as else if in c;
+
+#One line if else statement:
+a = 2
+b = 330
+print("A") if a > b else print("B")
+
+#One line if else statement, with 3 conditions:
+a = 330
+b = 330
+print("A") if a > b else print("=") if a == b else print("B")
+
+
+
+
+
+
+
+
 
 
 
