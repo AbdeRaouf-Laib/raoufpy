@@ -63,12 +63,11 @@ print(s)
 #Binary Types:	bytes, bytearray, memoryview
 #None Type:	    NoneType
 
-#Example:
-x = "Hello World"	                          #str	
+#:# = "Hello World"	                          #str	
 x = 20	                                      #int	
 x = 20.5	                                  #float	
 x = 1j	                                      #complex	
-x = ["apple", "banana", "cherry"]	          #list	
+x= ["apple", "banana", "cherry"]	          #list	
 x = ("apple", "banana", "cherry")	          #tuple	
 x = range(6)	                              #range	
 x = {"name" : "John", "age" : 36}	          #dict	
@@ -249,22 +248,22 @@ x = 200
 print(isinstance(x, int))
 
 #The logical operator
-#Operator	     Name       	    Example	
-#   +	        Addition	        x + y	
-#   -	        Subtraction	        x - y	
+#Operator	     Name       	    	
+#   +	        Addition	      #x + y	
+#   -	        Subtraction	       x - y	
 #   *	        Multiplication	    x * y	
 #   /	        Division	        x / y	
-#   %	        Modulus	            x % y	
+#   %	        Modulus	           x % y	
 #   **	        Exponentiation	    x ** y	
 #   //	        Floor division	    x // y
 
 #The assignment operator
-#Operator   Example     Same as
-#   =	    x = 5	    x = 5	
-#   +=	    x += 3	    x = x + 3	
+#Operator        Same as
+#   =	    #= 5	    x = 5	
+#   +=	   x += 3	    x = x + 3	
 #   -=	    x -= 3	    x = x - 3	
 #   *=	    x *= 3	    x = x * 3	
-#   /=	    x /= 3	    x = x / 3	
+#   /=	   x /= 3	    x = x / 3	
 #   %=	    x %= 3	    x = x % 3	
 #   //= 	x //= 3	    x = x // 3	
 #   **= 	x **= 3	    x = x ** 3	
@@ -275,37 +274,37 @@ print(isinstance(x, int))
 #   <<= 	x <<= 3	    x = x << 3
 
 #The  Comparison Operators
-#Operator   Name	                   Example	
-#   ==     Equal	                   x == y	
-#   !=     Not equal	               x != y	
+#Operator   Name	                   	
+#   ==     Equal	                 #x == y	
+#   !=     Not equal	              x != y	
 #   >	   Greater than                x > y	
 #   <	   Less than	               x < y	
-#   >=     Greater than or equal to    x >= y	
+#   >=     Greater than or equal t    x >= y	
 #   <=     Less than or equal to	   x <= y
 
 #Logical Operators
-#Operator	Description	                                                    Example	
-#and 	    Returns True if both statements are true	                  x < 5 and  x < 10	
-#or	        Returns True if one of the statements is true	              x < 5 or x < 4	
+#Operator	Description	                                                    	
+#and 	    Returns True if both statements are true	                  x #5 and  x < 10	
+#or	        Returns True if one of the statements is true	               < 5 or x < 4	
 #not	    Reverse the result, returns False if the result is true	not   (x < 5 and x < 10)
 
-#The Identity Operators
-#Operator	Description	                                            Example	
-#is     	Returns True if both variables are the same object	    x is y	
-#is not	    Returns True if both variables are not the same object	x is not y
+#The Identity Operator
+#Operator	Description	                                            	
+#is     	Returns True if both variables are the same object	  #x is y	
+#is not	    Returns True if both variables are not the same objet	x is not y
 
 #The Membership Operators
-#Operator	Description                                                                 	   Example
-#in 	    Returns True if a sequence with the specified value is present in the object	   x in y	
-#not in	    Returns True if a sequence with the specified value is not present in the object   x not in y
+#Operator	Description                                                                	   
+#in 	    Returns True if a sequence with the specified value is present in the object	 #x in y	
+#not in	    Returns True if a sequence with the specified value is not present in the objct   x not in y
 
 # The 
-#Operator	    Name      Description	                                                                                                           Example	
-#  &         	AND	      Sets each bit to 1 if both bits are 1                                                                                   	x & y	
-#  |	        OR	      Sets each bit to 1 if one of two bits is 1	                                                                            x | y	
+#Operator	    Name      Description	                                                                                                          	
+#  &         	AND	      Sets each bit to 1 if both bits are 1                                                                                # 	x & y	
+#  |	        OR	      Sets each bit to 1 if one of two bits is 1	                                                                           x | y	
 #  ^	        XOR	      Sets each bit to 1 if only one of two bits is 1	                                                                        x ^ y	
 #  ~	        NOT	      Inverts all the bits	                                                                                                    ~x	
-#  <<        	Zero      fill left shift	Shift left by pushing zeros in from the right and let the leftmost bits fall off                    	x << 2	
+#  <<        	Zero      fill left shift	Shift left by pushing zeros in from the right and let the leftmost bits fall off                   	x << 2	
 #  >>        	Signed    right shift	Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off     x >> 2
 
 #The Array in python:
@@ -606,11 +605,142 @@ print(green)
 print(tropic)
 print(red)
 
-#
+#Loop in tuple is same as list
+#To join and multiply tuple we use '+' To join and we use '*' To multiply:
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+tuple3 = tuple1 + tuple2
+print(tuple3)
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+print(mytuple)
 
+# Tuple Methods
+# count()	Returns the number of times a specified value occurs in a tuple
+# index()	Searches the tuple for a specified value and returns the position of where it was found
 
+#A set is a collection which is unordered, unchangeable*, and unindexed.
+#Sets are written with curly brackets.
+#Create a Set:
+#1st Method:
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+#2nd Method:
+Thisset = set(("lain","la","aa",2))
+print(Thisset)
 
+#Note: Sets are unordered, so you cannot be sure in which order the items will appear.
+#Unordered means that the items in a set do not have a defined order.
+#Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
+#Set items are unchangeable, meaning that we cannot change the items after the set has been created.
+#Once a set is created, you cannot change its items, but you can remove items and add new items.
+#Duplicates Not Allowed
+#Sets cannot have two items with the same value.
+#To determine how many items a set has, use the len() function.
+#Set items can be of any data type.
+#A set can contain different data types.
 
+#From Python's perspective, sets are defined as objects with the data type 'set':
+myset = {"apple", "banana", "cherry"}
+print(type(myset))
+
+#you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword.
+
+#Check if "banana" is present in the set:
+thisset = {"apple", "banana", "cherry"}
+print("banana" in thisset)
+
+#Once a set is created, you cannot change its items, but you can add new items.
+#Add an item to a set, using the add() method:
+thisset = {"apple", "banana", "cherry"}
+thisset.add("orange")
+print(thisset)
+
+#To add items from another set into the current set, use the update() method.
+#Add elements from tropical into thisset:
+thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+thisset.update(tropical)
+print(thisset)
+
+#The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).
+#Add elements of a list to at set:
+thisset = {"apple", "banana", "cherry"}
+mylist = ["kiwi", "orange"]
+thisset.update(mylist)
+print(thisset)
+
+#Remove "banana" by using the remove() method:
+thisset = {"apple", "banana", "cherry"}
+thisset.remove("banana")
+print(thisset)
+
+#Remove "banana" by using the discard() method:
+thisset = {"apple", "banana", "cherry"}
+thisset.discard("banana")
+print(thisset)
+
+#You can also use the pop() method to remove an item, but this method will remove a random item, so you cannot be sure what item that gets removed.
+thisset = {"apple", "banana", "cherry"}
+x = thisset.pop()
+print(x)
+print(thisset)
+
+#The clear() method empties the set:
+thisset = {"apple", "banana", "cherry"}
+thisset.clear()
+print(thisset)
+
+#The del keyword will delete the set completely:
+thisset = {"apple", "banana", "cherry"}
+del thisset
+print(thisset)
+#You can loop through the set items by using a for loop:
+
+#There are several ways to join two or more sets in Python.
+#You can use the union() method that returns a new set containing all items from both sets, or the update() method that inserts all the items from one set into another:
+#The union() method returns a new set with all items from both sets:
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+set3 = set1.union(set2)
+print(set3)
+
+#The update() method inserts the items in set2 into set1:
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+set1.update(set2)
+print(set1)
+
+#The intersection_update() method will keep only the items that are present in both sets.
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.intersection_update(y)
+print(x)
+
+#The symmetric_difference_update() method will keep only the elements that are NOT present in both sets.
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.symmetric_difference_update(y)
+print(x)
+
+#Method	                        Description
+#add()	                        Adds an element to the set
+#clear()                        Removes all the elements from the set
+#copy()	                        Returns a copy of the set
+#difference()	                  Returns a set containing the difference between two or more sets
+#difference_update()	          Removes the items in this set that are also included in another, specified set
+#discard()	                    Remove the specified item
+#intersection()	                Returns a set, that is the intersection of two other sets
+#intersection_update()	        Removes the items in this set that are not present in other, specified set(s)
+#isdisjoint()	                  Returns whether two sets have a intersection or not
+#issubset()	                    Returns whether another set contains this set or not
+#issuperset()	                  Returns whether this set contains another set or not
+#pop()	                        Removes an element from the set
+#remove()	                      Removes the specified element
+#symmetric_difference()	        Returns a set with the symmetric differences of two sets
+#symmetric_difference_update()	inserts the symmetric differences from this set and another
+#union()	                      Return a set containing the union of sets
+#update()	                      Update the set with the union of this set and others
 
 
 
@@ -664,3 +794,10 @@ c = complex(x)
 #-Note: The length of the list will change when the number of items inserted does not match the number of items replaced.
 #By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters.
 #Note: You cannot remove items in a tuple.
+#Note: Set items are unchangeable, but you can remove items and add new items.
+#Note: The values True and 1 are considered the same value in sets, and are treated as duplicates:
+#Note: If the item to remove does not exist, remove() will raise an error.
+#Note: If the item to remove does not exist, discard() will NOT raise an error.
+#Note: Sets are unordered, so when using the pop() method, you do not know which item that gets removed.
+#Note: Both union() and update() will exclude any duplicate items.
+#Note: The values True and 1 are considered the same value in sets, and are treated as duplicates;
