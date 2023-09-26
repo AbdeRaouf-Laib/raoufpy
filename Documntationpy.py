@@ -694,7 +694,7 @@ print(thisset)
 #The del keyword will delete the set completely:
 thisset = {"apple", "banana", "cherry"}
 del thisset
-print(thisset)
+
 #You can loop through the set items by using a for loop:
 
 #There are several ways to join two or more sets in Python.
@@ -816,6 +816,110 @@ x = thisdict.keys()
 print(x)
 
 #The list of the keys is a view of the dictionary, meaning that any changes done to the dictionary will be reflected in the keys list.
+#Add a new item to the original dictionary, and see that the keys list gets updated as well:
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.keys()
+print(x) #before the change
+car["color"] = "white"
+print(x) #after the change
+
+#The values() method will return a list of all the values in the dictionary.
+x = thisdict.values()
+print(x)
+
+#he list of the values is a view of the dictionary, meaning that any changes done to the dictionary will be reflected in the values list.
+#Make a change in the original dictionary, and see that the values list gets updated as well:
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.values()
+print(x) #before the change
+car["year"] = 2020
+print(x) #after the change
+
+#Add a new item to the original dictionary, and see that the values list gets updated as well:
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.values()
+print(x) #before the change
+car["color"] = "red"
+print(x) #after the change
+
+#The items() method will return each item in a dictionary, as tuples in a list.
+x = thisdict.items()
+print(x)
+
+#To determine if a specified key is present in a dictionary use the in keyword:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+if "model" in thisdict:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")
+
+#To change the Items in dictonries:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["year"] = 2018
+
+#To update Items in dictonries:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"year": 2020})
+
+#Adding an item to the dictionary is done by using a new index key and assigning a value to it:
+#1st method 
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["color"] = "red"
+print(thisdict)
+#2nd method
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"color": "red"})
+
+# The pop() method removes the item with the specified key name:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.pop("model")
+print(thisdict)
+
+#The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.popitem()
+print(thisdict)
+
+
+
 
 
 
