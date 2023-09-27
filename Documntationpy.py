@@ -1054,6 +1054,62 @@ b = 200
 if b > a:
   pass
 
+#while loop in python is same as in c but with the addition:
+#With the continue statement we can stop the current iteration, and continue with the next;
+#With the else statement we can run a block of code once when the condition no longer is true:
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+
+#for loop is same as in c but with The addition:
+#Break the loop when x is 3, and see what happens with the else block;
+#The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3);
+#The range() function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: range(2, 6), which means values from 2 to 6 (but not including 6);
+#With the continue statement we can stop the current iteration of the loop, and continue with the next;
+#for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
+
+#Creating a Function
+#In Python a function is defined using the def keyword:
+def my_function():
+  print("Hello from a function")
+#To call it:
+my_function()
+#Arguments
+# Information can be passed into functions as arguments.
+# Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+# The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:
+def my_function(fname):
+  print(fname + " Refsnes")
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+
+#Number of Arguments
+# By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.
+# This function expects 2 arguments, and gets 2 arguments:
+def my_function(fname, lname):
+  print(fname + " " + lname)
+my_function("Emil", "Refsnes")
+
+#Arbitrary Arguments, *args
+# If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
+# This way the function will receive a tuple of arguments, and can access the items accordingly:
+# If the number of arguments is unknown, add a * before the parameter name:
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+my_function("Emil", "Tobias", "Linus")
+
+#Keyword Arguments
+# You can also send arguments with the key = value syntax.
+# This way the order of the arguments does not matter.
+def my_function(child3, child2, child1):
+  print("The youngest child is " + child3)
+my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
+
+#The phrase Keyword Arguments are often shortened to kwargs in Python documentations.
 
 
 
