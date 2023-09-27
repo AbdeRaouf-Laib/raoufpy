@@ -1110,12 +1110,84 @@ def my_function(child3, child2, child1):
 my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
 
 #The phrase Keyword Arguments are often shortened to kwargs in Python documentations.
+# Arbitrary Keyword Arguments, **kwargs
+# If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.
+# This way the function will receive a dictionary of arguments, and can access the items accordingly:
+# If the number of keyword arguments is unknown, add a double ** before the parameter name:
+def my_function(**kid):
+  print("His last name is " + kid["lname"])
+my_function(fname = "Tobias", lname = "Refsnes")
 
+#Arbitrary Kword Arguments are often shortened to **kwargs in Python documentations.
 
+# Default Parameter Value
+# The following example shows how to use a default parameter value.
+# If we call the function without argument, it uses the default value:
+def my_function(country = "Norway"):
+  print("I am from " + country)
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
 
+#You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.
+#To let a function return a value, use the return statement:
+def my_function(x):
+  return 5 * x
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
 
+#function definitions cannot be empty, but if you for some reason have a function definition with no content, put in the pass statement to avoid getting an error.
+def myfunction():
+  pass
 
+#The Recursion in python is same as in c;
 
+#A lambda function is a small anonymous function.
+# A lambda function can take any number of arguments, but can only have one expression
+#Syntax
+# lambda arguments : expression
+#Add 10 to argument a, and return the result:
+x = lambda a : a + 10
+print(x(5))
+#Multiply argument a with argument b and return the result:
+x = lambda a, b : a * b
+print(x(5, 6))
+
+#Why Use Lambda Functions?
+# The power of lambda is better shown when you use them as an anonymous function inside another function.
+# Say you have a function definition that takes one argument, and that argument will be multiplied with an unknown number:
+def myfunc(n):
+  return lambda a : a * n
+mydoubler = myfunc(2)
+print(mydoubler(11))
+#Use lambda functions when an anonymous function is required for a short period of time.
+
+#You can use the append() method to add an element to an array.
+cars = ["laib"]
+# Add one more element to the cars array:
+cars.append("Honda")
+
+# Method	      Description
+# append()	    Adds an element at the end of the list
+# clear()	      Removes all the elements from the list
+# copy()	      Returns a copy of the list
+# count()	      Returns the number of elements with the specified value
+# extend()	    Add the elements of a list (or any iterable), to the end of the current list
+# index()	      Returns the index of the first element with the specified value
+# insert()	    Adds an element at the specified position
+# pop()	        Removes the element at the specified position
+# remove()	    Removes the first item with the specified value
+# reverse()	    Reverses the order of the list
+# sort()	      Sorts the list
+
+#Create a class named MyClass, with a property named x:
+class MyClass:
+  x = 5
+#Create an object named p1, and print the value of x:
+p1 = MyClass()
+print(p1.x)
 
 
 
