@@ -1438,7 +1438,12 @@ for x in myiter:
 #import name of file as name of struct 
 #print(name of file.value)
 
+#for print all values
+#import mymodule
+#print(dir(mymodule))
 
+#The  syntax of importing only the person1 dictionary of the "mymodule" module?
+#from mymodule import person1
 
 
 
