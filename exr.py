@@ -38,4 +38,24 @@ while i < Euro:
     i += 1
     Dollar += 1.65
 print(Euro ,"Euro is ", Dollar,"Dollar")
-#3ed:
+#6th:
+Length = int(input("Enter the length of Cuboid: ")) 
+width = int(input("Enter The width of Cubiod: "))
+height = int(input("Enter The height of cubiod: "))
+area = (Length * width) * 2 + (width * height) * 2 + (Length * height) * 2
+print("The area of cubiod is: ",area," cm3")
+#7th:
+Seconds = int(input("Enter the number of Seconds: "))
+year = Seconds / 31536000
+month = (Seconds % 31536000) / 2592000
+day = ((Seconds % 31536000) % 2592000) / 86400
+print(int(year) ,"y " , int(month), "m " , int(day),"d " ,int(((Seconds % 31536000) % 2592000) % 86.400),"s")
+#8th exo:
+a = 1
+i = 1
+while i < 20:
+    a = i * 7
+    i += 1
+    if (a % 3) == 0:
+        print("*",end="")
+    print(a,end=" ")
