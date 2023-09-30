@@ -24,7 +24,7 @@ Name, familyName = "raouf","laib"
 a = b = 2
 Fruit = ["apple","banana"]
 x,y = Fruit
-
+a,b = 1 , "lain"
 #To get the data type of the variable
 x = 3
 type(x)
