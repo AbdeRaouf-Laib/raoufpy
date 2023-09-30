@@ -1,14 +1,12 @@
 
 
 def num_player():
-    number_player = input("How many players?")
+    number_player = int(input("How many players?"))
     return number_player
 def F_start_game():
     numberof_player = num_player()
     if numberof_player == 1:
         print("1")
-        print("laib")
-    print("do you have get up")
         
 
 def main():
